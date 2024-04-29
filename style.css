@@ -1,0 +1,98 @@
+body {
+  background-color: black;
+}
+
+.btn-primary {
+  background-color: #656780;
+  border-color: #656780;
+  margin: 2px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #81859c;
+  border-color: #81859c;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #81859c !important;
+  border-color: #81859c !important;
+  box-shadow: none !important;
+}
+
+#keyboard {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.kb-row {
+  margin-bottom: 5px;
+}
+
+.container {
+  text-align: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+.container-box {
+  display: inline-block;
+  background-color: #191a24;
+  border: 2px solid #414458;
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 65px;
+  height: 63px;
+  text-align: center;
+}
+
+.head-btn {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-left: 27rem;
+  margin-bottom: 1rem;
+}
+
+.tp-btn {
+  background-color: #40445c !important;
+  border-color: #40445c !important;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  margin-left: 7px;
+  margin-top: 7px;
+  border-radius: 8px;
+  color: #dfe1f3;
+  text-align: center;
+}
+
+.tp-btn:hover {
+  color: #81c581 !important;
+  background-color: #619b61 !important;
+}
+
+.btn {
+  background-color: #81859c !important;
+  border-color: #81859c !important;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 24px !important;
+    align-items: center;
+}

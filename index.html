@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle Solver</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="head-btn">
+        <button class="tp-btn"><i class="fa fa-home"></i></button>
+        <button class="tp-btn"><i class="fa fa-bars"></i></button>
+        <button class="tp-btn"><i class="fa fa-close"></i></button>
+      </header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+              <div class="container-box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="keyboard">
+        <div class="kb-row">
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('Q')"
+          >
+            Q
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('W')"
+          >
+            W
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('E')"
+          >
+            E
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('R')"
+          >
+            R
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('T')"
+          >
+            T
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('Y')"
+          >
+            Y
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('U')"
+          >
+            U
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('I')"
+          >
+            I
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('O')"
+          >
+            O
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('P')"
+          >
+            P
+          </button>
+        </div>
+        <div class="kb-row">
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('A')"
+          >
+            A
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('S')"
+          >
+            S
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('D')"
+          >
+            D
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('F')"
+          >
+            F
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('G')"
+          >
+            G
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('H')"
+          >
+            H
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('J')"
+          >
+            J
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('K')"
+          >
+            K
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 59px"
+            onclick="appendToDisplay('L')"
+          >
+            L
+          </button>
+        </div>
+        <div class="kb-row">
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            style="width: 70px"
+            onclick="clearLastCharacter()"
+          >
+            ⌫
+          </button>
+
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('Z')"
+          >
+            Z
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('X')"
+          >
+            X
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('C')"
+          >
+            C
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('V')"
+          >
+            V
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('B')"
+          >
+            B
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('N')"
+          >
+            N
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="appendToDisplay('M')"
+          >
+            M
+          </button>
+          <button
+            class="btn btn-primary font-weight-bold"
+            type="button"
+            onclick="enterString('')"
+          >
+            ENTER
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
